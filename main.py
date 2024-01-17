@@ -10,6 +10,9 @@ from mmdet.registry import MODELS
 from mmengine import Config, print_log
 from mmengine.structures import InstanceData
 
+from openxlab.model import download
+download(model_repo='openxlab-app/ovsam', model_name='sam2clip_vith_rn50.pth',output='/home/xlab-app-center/models')
+
 from ext.class_names.lvis_list import LVIS_CLASSES
 
 LVIS_NAMES = LVIS_CLASSES
